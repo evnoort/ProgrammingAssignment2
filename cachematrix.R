@@ -1,35 +1,15 @@
-## This is the implementation of a cache mechanism to hold the inverse of a matrix
+## Put comments here that give an overall description of what your
+## functions do
 
-## Post: Return a cache matrix object for matrix x.
-## The cache matrix object stores the matrix and its inverse matrix value  
+## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-    m <- NULL
-    set <- function(y) {
-        x <<- y
-        m <<- NULL
-    }
-    get <- function() x
-    setinv <- function(inv) m <<- inv
-    getinv <- function() m
-    list(set = set, get = get,
-         setinv = setinv,
-         getinv = getinv)
+
 }
 
 
-## Post: The inverse of the cache matrix object x is returned either from cache
-## or from calculation (if not in cache). On calculation the inverse is stored in the cache matrix object.  
+## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-    m <- x$getinv()
-    if(!is.null(m)) {
-        m
-    }
-    else {
-        data <- x$get()
-        m <- solve(data, ...)
-        x$setinv(m)
-        m
-    }
+        ## Return a matrix that is the inverse of 'x'
 }
